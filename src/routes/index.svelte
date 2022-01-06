@@ -1,15 +1,12 @@
 <script lang="ts">
   import CardPage from '$lib/CardPage.svelte';
-  let data: CardPageData = {
+  import LanguageDropdown from '$lib/LanguageDropdown.svelte';
+  import { _ } from 'svelte-i18n';
+  let data: CardPageData;
+  $: data = {
     title: 'Eli Kogan-Wang // elikoga',
-    subtitle: 'Ich baue Dinge. // I build things.',
-    description: `I'm currently a Student at the University of Paderborn studying Computer Science as a Bachelor.
-
-I'm working at the [Flying Circus](https://flyingcircus.io/) doing mainly [Nix/NixOS](https://nixos.org/) and some [Python](https://www.python.org/) development right now.
-
-Outside of work I do Frontend Development with [Svelte](https://svelte.dev/) and backend development with [Node.js](https://nodejs.org/).
-
-My Résumé is avaliable in [de](https://cv.eliko.ga/cv/de) and [en](https://cv.eliko.ga/cv/en).`,
+    subtitle: $_('subtitle'),
+    description: $_('description'),
     image: {
       src: '/PortraitSmall.jpg',
       alt: 'Picture of Eli Kogan-Wang'
@@ -61,4 +58,16 @@ My Résumé is avaliable in [de](https://cv.eliko.ga/cv/de) and [en](https://cv.
   };
 </script>
 
+<div class="language-dropdown"><LanguageDropdown /></div>
+
 <CardPage {data} />
+
+<style>
+  .language-dropdown {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 0.5rem;
+  }
+</style>
