@@ -2,6 +2,8 @@
   import SocialCircle from './SocialCircle.svelte';
   import { SvelteToast } from '@zerodevx/svelte-toast';
 
+  import SvelteMarkdown from 'svelte-markdown';
+
   export let data: CardPageData;
 </script>
 
@@ -22,11 +24,11 @@
       <div class="row no-gutters">
         <div class="col-md-7 d-flex flex-column">
           <div class="card-body">
-            <h5 class="card-title">{data.title}</h5>
-            <p class="card-text">{data.subtitle}</p>
-            <p class="card-text">
-              {data.description}
-            </p>
+            <h4 class="card-title">{data.title}</h4>
+            <h5 class="card-subtitle">{data.subtitle}</h5>
+            <div class="card-text mt-2">
+              <SvelteMarkdown source={data.description} />
+            </div>
           </div>
           <div class="card-body soc-list mr-auto">
             {#each data.socials as social}
