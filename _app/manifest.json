@@ -1,0 +1,71 @@
+{
+  ".svelte-kit/build/runtime/internal/start.js": {
+    "file": "start-9f40247c.js",
+    "src": ".svelte-kit/build/runtime/internal/start.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor-6c71ab00.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/build/components/layout.svelte",
+      ".svelte-kit/build/components/error.svelte",
+      "src/routes/index.svelte"
+    ],
+    "css": [
+      "assets/start-61d1577b.css"
+    ]
+  },
+  ".svelte-kit/build/components/layout.svelte": {
+    "file": "layout.svelte-7dc3177d.js",
+    "src": ".svelte-kit/build/components/layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-6c71ab00.js"
+    ]
+  },
+  ".svelte-kit/build/components/error.svelte": {
+    "file": "error.svelte-3ba6a325.js",
+    "src": ".svelte-kit/build/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-6c71ab00.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-e5ebee2b.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-6c71ab00.js"
+    ],
+    "css": [
+      "assets/pages/index.svelte-7ef13474.css"
+    ],
+    "assets": [
+      "assets/fa-brands-400-e4299464.eot",
+      "assets/fa-brands-400-8ea87917.woff2",
+      "assets/fa-brands-400-f9217f66.woff",
+      "assets/fa-brands-400-cda59d6e.ttf",
+      "assets/fa-brands-400-a3b98177.svg",
+      "assets/fa-regular-400-79d08806.eot",
+      "assets/fa-regular-400-e42a8844.woff2",
+      "assets/fa-regular-400-cb9e9e69.woff",
+      "assets/fa-regular-400-e8711bbb.ttf",
+      "assets/fa-regular-400-be0a0849.svg",
+      "assets/fa-solid-900-373c04fd.eot",
+      "assets/fa-solid-900-9834b82a.woff2",
+      "assets/fa-solid-900-3f6d3488.woff",
+      "assets/fa-solid-900-af639750.ttf",
+      "assets/fa-solid-900-9674eb1b.svg"
+    ]
+  },
+  "_vendor-6c71ab00.js": {
+    "file": "chunks/vendor-6c71ab00.js",
+    "css": [
+      "assets/vendor-42482fb6.css"
+    ]
+  }
+}
