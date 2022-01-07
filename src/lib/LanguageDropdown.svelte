@@ -9,6 +9,12 @@
   }
   // set language to localStorage
 
+  // if begins with en set to en
+  if (language && language.startsWith('en')) {
+    language = 'en';
+    $locale = language;
+  }
+
   $: {
     $locale = language;
     // save to localStorage
