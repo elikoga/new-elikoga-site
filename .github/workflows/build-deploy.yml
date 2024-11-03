@@ -16,10 +16,10 @@ jobs:
           node-version: "16.x"
       - run: npm ci
       - run: npm run build
-      - name: 'Run peaceiris/actions-gh-pages@v3: deploy to github pages'
-        uses: peaceiris/actions-gh-pages@v3
+      - name: 'Run peaceiris/actions-gh-pages@v4: deploy to github pages'
+        uses: peaceiris/actions-gh-pages@v4
         if: ${{ github.ref == 'refs/heads/master' }}
         with:
           publish_dir: ./build
           cname: eliko.ga
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
